@@ -14,7 +14,10 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors())
 
 app.use('/members', memberRoutes)
-// const CONNECTION_URL = 'mongodb+srv://gab75:gab75123@cluster0.tut4c.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
+app.get('/', (req, res) => {
+    res.send('Hello to the Argonautes team')
+})
 
 const PORT = process.env.PORT || 5000
 
