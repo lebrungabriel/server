@@ -15,7 +15,7 @@ app.use(cors())
 
 // app.use('/members', memberRoutes)
 
-app.get('/members', memberRoutes)
+app.get('/', memberRoutes)
 
 const PORT = process.env.PORT || 5000
 
